@@ -5,7 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redação Parana</title>
 </head>
-<body>
-    
+ 
+<body class="flexColumn">
+
+    <div class="cabecalho">
+
+        <div class="logo-wrapper"> <a href="index.html"> <img class="logo" src="./img/logo.png"> </a>
+
+        </div>
+
+        <div class="menus">
+            <nav>
+                <ul>
+                    <li class=" comic-button">
+                        <h2><a href="index.html">Inicio </a></h2>
+                    </li>
+                    <li class=" comic-button">
+                        <h2><a href="cadastro.html">Cadastro </a> </h2>
+                    </li>
+                    <li class=" comic-button">
+                        <h2><a href="login.html">Login </a></h2>
+                    </li>
+                    <li class=" comic-button">
+                        <h2><a href="produto.html">Produtos </a> </h2>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    </div>
+
+    <pre>
+        <span> Bakery Dreans: Seus sonhos doces ao seu alcance! </span>
+    </pre>
+
+    <div class="para-la">
+        <form id="prod" class="CartContainer">
+            <div class="Header">
+                <h3 class="Heading">Carrinho de compras</h3>
+            </div>
+
+            <div class="Cart-Items">
+                <div class="image-box">
+                    <img src="./img/cake-cho.jfif" style="height:120px" />
+                </div>
+
+                <div class="about">
+                    <h1 class="title">Bolo de chocolate</h1>
+                    <h3 class="subtitle">KG</h3>
+                </div>
+
+                <div class="counter">
+                    <div class="btn" onclick="almentarKg('chocolate')">+</div>
+                    <input class="count" id="ContChoco" value="0"/>
+                    <div class="btn"  onclick="abaixarKg('chocolate')">-</div>
+                </div>
+
+                <div class="prices">
+                    <input class="amount"  id="precoChoc" value="R$0,00"/>
+                </div>
+            </div>
+
+            <div class="Cart-Items pad">
+                <div class="image-box">
+                    <img src="./img/cake-mor.jfif" style="height:120px" />
+                </div>
+
+                <div class="about">
+                    <h1 class="title">Bolo de morango</h1>
+                    <h3 class="subtitle">KG</h3>
+                </div>
+
+                <div class="counter">
+                    <div class="btn" onclick="almentarKg('morango')">+</div>
+                    <input class="count"  id="Contmorang" value="0"/>
+                    <div class="btn" onclick="abaixarKg('morango')">-</div>
+                </div>
+
+                <div class="prices">
+                    <input class="amount"  id="precoMoran" value="R$0,00"/>
+                </div>
+            </div>
+
+            <div class="checkout">
+                <div class="total">
+                    <div>
+                        <div class="Subtotal">Total</div>
+                        <div class="items">2 itens</div>
+                    </div>
+                    <input class="total-amount" id="precototal" value="R$ 0,00"/>
+                </div>
+                <button class="form-button" id="submit" type="submit">Concluir compra</button>
+            </div>
+        </form>
+    </div>
+    <script src="scriptpro.js"></script>
+
+    <div class="content"></div>
+
+    <div class="container body-content">
+    </div>
+    <footer id="rodape">
+        <p>
+        <div class="logo-wrapper"> <a href="index.html"> <img class="logo" src="./img/logo.png"> </a>
+        </div>
+        </p>
+        <a href="https://web.whatsapp.com">
+            <div class="contact comic-button">
+                Telefone para contato: (45)99199-1991
+            </div>
+        </a>
+    </footer>
 </body>
 </html>
