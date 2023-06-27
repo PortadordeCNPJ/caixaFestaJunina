@@ -1,29 +1,32 @@
 let form = document.getElementById("prod");
 
-const valorKgBoloChoc = 45
-const valorKgBoloMora = 40
+const valorPacoca = 1.00
+const valorBeijinho = 3.00
+const valorCajuzinho = 3.00 
+const valorDoisAmores = 3.00
 
-function calcValor(tipoBolo) {
-    console.log(tipoBolo);
+function calcValor(tipoDoce) {
+    console.log(tipoDoce);
 
-    var precoChoc = document.querySelector("#precoChoc");
-    var precoMoran = document.querySelector("#precoMoran");
+    var precoPacoca = document.querySelector("#precoPacoca");
+    var precoCaju = document.querySelector("#precoCaju");
 
-    if (tipoBolo == 'chocolate') {
-        var inputcontagem = document.querySelector("#ContChoco");
-        var preco = parseInt(inputcontagem.value) * valorKgBoloChoc;
-        precoChoc.value = ("R$ " + preco.toFixed(2)).replace(".", ".");
+    if (tipoDoce == 'pacoca') {
+        var inputcontagem = document.querySelector("#ContPacoca");
+        var preco = parseInt(inputcontagem.value) * valorPacoca;
+        precoPacoca.value = ("R$ " + preco.toFixed(2)).replace(".", ".");
     }
 
     else
-        if (tipoBolo == 'morango') {
-            var inputcontagem = document.querySelector("#Contmorang");
-            var preco = parseInt(inputcontagem.value) * valorKgBoloMora;
-            precoMoran.value = ("R$ " + preco.toFixed(2)).replace(".", ",");
+        if (tipoDoce == 'cajuzinho') {
+            var inputcontagem = document.querySelector("#ContCajuzinho");
+            var preco = parseInt(inputcontagem.value) * valorCajuzinho;
+            precoCaju.value = ("R$ " + preco.toFixed(2)).replace(".", ",");
         }
 
     var valorTotalinput = document.querySelector("#precototal");
-    var valorTotal = converterStringParaFloat(precoChoc.value) + converterStringParaFloat(precoMoran.value);
+    var desconto = 1;
+    var valorTotal = converterStringParaFloat(precoPacoca.value) + converterStringParaFloat(precoCaju.value);
     valorTotalinput.value = ("R$ " + valorTotal.toFixed(2)).replace(".", ",")
 }
 
@@ -40,46 +43,46 @@ function converterStringParaFloat(valor) {
     return resultado;
 }
 
-function almentarKg(tipoBolo) {
-    console.log(tipoBolo);
-    if (tipoBolo == "chocolate") {
-        var inputcontagem = document.querySelector("#ContChoco");
-        var ContagemChoco = inputcontagem.value
-        var novovalor = parseInt(ContagemChoco) + 1;
+function almentarKg(tipoDoce) {
+    console.log(tipoDoce);
+    if (tipoDoce == "pacoca") {
+        var inputcontagem = document.querySelector("#ContPacoca");
+        var ContagemPaco = inputcontagem.value
+        var novovalor = parseInt(ContagemPaco) + 1;
         inputcontagem.value = novovalor;
     }
     else
 
-        if (tipoBolo == "morango") {
-            var inputcontagem1 = document.querySelector("#Contmorang");
-            var ContagemMorango = inputcontagem1.value
-            var novovalor1 = parseInt(ContagemMorango) + 1;
+        if (tipoDoce == "cajuzinho") {
+            var inputcontagem1 = document.querySelector("#ContCajuzinho");
+            var ContagemCaju = inputcontagem1.value
+            var novovalor1 = parseInt(ContagemCaju) + 1;
             inputcontagem1.value = novovalor1;
         }
-    calcValor(tipoBolo)
+    calcValor(tipoDoce)
 }
 
-function abaixarKg(tipoBolo) {
-    console.log(tipoBolo);
-    if (tipoBolo == "chocolate") {
-        var inputcontagem = document.querySelector("#ContChoco");
-        var ContagemChoco = inputcontagem.value
-        if (ContagemChoco > 0) {
-            var novovalor = parseInt(ContagemChoco) - 1;
+function abaixarKg(tipoDoce) {
+    console.log(tipoDoce);
+    if (tipoDoce == "pacoca") {
+        var inputcontagem = document.querySelector("#ContPacoca");
+        var ContagemPaco = inputcontagem.value
+        if (ContagemPaco > 0) {
+            var novovalor = parseInt(ContagemPaco) - 1;
             inputcontagem.value = novovalor;
         }
     }
     else
 
-        if (tipoBolo == "morango") {
-            var inputcontagem1 = document.querySelector("#Contmorang");
-            var ContagemMorango = inputcontagem1.value
-            if (ContagemMorango > 0) {
-                var novovalor1 = parseInt(ContagemMorango) - 1;
+        if (tipoDoce == "cajuzinho") {
+            var inputcontagem1 = document.querySelector("#ContCajuzinho");
+            var ContagemCaju = inputcontagem1.value
+            if (ContagemCaju > 0) {
+                var novovalor1 = parseInt(ContagemCaju) - 1;
                 inputcontagem1.value = novovalor1;
             }
         }
-    calcValor(tipoBolo)
+    calcValor(tipoDoce)
 }
 
 form.addEventListener("submit", (e) => {
