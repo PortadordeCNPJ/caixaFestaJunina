@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="prod">
+        <div class="container-card">
+            <div class="card">
+                <img class="img-card" src="cajuzinho.jpg">
+                <div class="texto-card">
+                    <div class="btn" onclick="almentarKg('pacoca')">+</div>
+                    <input class="count" id="ContPacoca" value="0" />
+                    <div class="btn" onclick="abaixarKg('pacoca')">-</div>
+                </div>
+                <div class="prices">
+                    <input class="amount" id="precoPacoca" value="R$0,00" />
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="img-card" src="doisAmores.jpg">
+                <div class="texto-card">
+                    <div class="btn" onclick="almentarKg('cajuzinho')">+</div>
+                    <input class="count" id="ContCajuzinho" value="0" />
+                    <div class="btn" onclick="abaixarKg('cajuzinho')">-</div>
+                </div>
+                <div class="prices">
+                    <input class="amount" id="precoCaju" value="R$0,00" />
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="img-card" src="pacoca.jpg">
+                <div class="texto-card">
+                    <div class="btn" onclick="almentarKg('pacoca')">+</div>
+                    <input class="count" id="ContPacoca" value="0" />
+                    <div class="btn" onclick="abaixarKg('pacoca')">-</div>
+                </div>
+                <div class="prices">
+                    <input class="amount" id="precoPacoca" value="R$0,00" />
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="img-card" src="beijinho.png">
+                <div class="texto-card">
+                    <div class="btn" onclick="almentarKg('cajuzinho')">+</div>
+                    <input class="count" id="ContCajuzinho" value="0" />
+                    <div class="btn" onclick="abaixarKg('cajuzinho')">-</div>
+                </div>
+                <div class="prices">
+                    <input class="amount" id="precoCaju" value="R$0,00" />
+                </div>
+            </div>
+        </div>
+        <input class="total-amount" id="precototal" value="R$ 0,00" />
+    </form>
+    <script src="scriptteste.js"></script>
+</body>
+
+</html>
