@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="prod" class="container-card">
+        <div class="card">
+            <img class="img-card" src="robloco.png">
+            <div class="texto-card">
+                <div class="btn" onclick="almentarKg('pacoca')">+</div>
+                <input class="count" id="ContPacoca" value="0" />
+                <div class="btn" onclick="abaixarKg('pacoca')">-</div>
+            </div>
+            <div class="prices">
+                <input class="amount" id="precoPacoca" value="R$0,00" />
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="img-card" src="robloco.png">
+            <div class="texto-card">
+                <div class="btn" onclick="almentarKg('morango')">+</div>
+                    <input class="count"  id="Contmorang" value="0"/>
+                    <div class="btn" onclick="abaixarKg('morango')">-</div>
+            </div>
+            <div class="prices">
+                <input class="amount" id="precoCaju" value="R$0,00" />
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="img-card" src="robloco.png">
+            <div class="texto-card">
+                <div class="btn" onclick="almentarKg('chocolate')">+</div>
+                <input class="count" id="ContChoco" value="0" />
+                <div class="btn" onclick="abaixarKg('chocolate')">-</div>
+            </div>
+            <div class="prices">
+                <input class="amount" id="precoChoc" value="R$0,00" />
+            </div>
+        </div>
+    </div>
+    <script src="scriptteste.js"></script>
+</body>
+
+</html>
