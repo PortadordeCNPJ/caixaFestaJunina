@@ -19,73 +19,57 @@
         <form id="prod">
             <div class="container-card">
                 <div class="card">
-                    <img class="img-card" src="./imgs/pacoca.jpg">
-                    <div class="texto-card">
-                        <div class="btn" onclick="almentarKg('pacoca')">+</div>
-                        <input class="count" id="ContPacoca" value="0" />
-                        <div class="btn" onclick="abaixarKg('pacoca')">-</div>
-                    </div>
-                    <div class="prices">
-                        <input class="amount" id="precoPacoca" value="R$0,00" />
-                    </div>
-                </div>
-
-                <div class="card">
                     <img class="img-card" src="./imgs/cajuzinho.jpg">
                     <div class="texto-card">
                         <div class="btn" onclick="almentarKg('cajuzinho')">+</div>
-                        <input class="count" id="ContCajuzinho" value="0" />
+                        <input class="count" id="ContCajuzinho" readonly value="0" />
                         <div class="btn" onclick="abaixarKg('cajuzinho')">-</div>
                     </div>
                     <div class="prices">
-                        <input class="amount" id="precoCaju" value="R$0,00" />
+                        <input class="amount" id="precoCaju" readonly value="R$0,00" />
                     </div>
                 </div>
-
+    
                 <div class="card">
                     <img class="img-card" src="./imgs/doisAmores.jpg">
                     <div class="texto-card">
+                        <div class="btn" onclick="almentarKg('twoAmores')">+</div>
+                        <input class="count" id="ContAmores" readonly value="0" />
+                        <div class="btn" onclick="abaixarKg('twoAmores')">-</div>
+                    </div>
+                    <div class="prices">
+                        <input class="amount" id="precoAmore" readonly value="R$0,00" />
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <img class="img-card" src="./imgs/pacoca.jpg">
+                    <div class="texto-card">
                         <div class="btn" onclick="almentarKg('pacoca')">+</div>
-                        <input class="count" id="ContPacoca" value="0" />
+                        <input class="count" id="ContPacoca" readonly value="0" />
                         <div class="btn" onclick="abaixarKg('pacoca')">-</div>
                     </div>
                     <div class="prices">
-                        <input class="amount" id="precoPacoca" value="R$0,00" />
+                        <input class="amount" id="precoPacoca" readonly value="R$0,00" />
                     </div>
                 </div>
-
+    
                 <div class="card">
                     <img class="img-card" src="./imgs/beijinho.png">
                     <div class="texto-card">
-                        <div class="btn" onclick="almentarKg('cajuzinho')">+</div>
-                        <input class="count" id="ContCajuzinho" value="0" />
-                        <div class="btn" onclick="abaixarKg('cajuzinho')">-</div>
+                        <div class="btn" onclick="almentarKg('beijinho')">+</div>
+                        <input class="count" id="ContBeijinho" readonly value="0" />
+                        <div class="btn" onclick="abaixarKg('beijinho')">-</div>
                     </div>
                     <div class="prices">
-                        <input class="amount" id="precoCaju" value="R$0,00" />
+                        <input class="amount" id="precoBeij" readonly value="R$0,00" />
                     </div>
                 </div>
             </div>
-            <input class="total-amount" id="precototal" value="R$ 0,00" />
+            <input class="total-amount" id="precototal" readonly value="R$ 0,00" />
         </form>
     </div>
     <script src="script.js"></script>
-
-    <div class="content"></div>
-
-    <div class="container body-content">
-    </div>
-    <footer id="rodape">
-        <p>
-        <div class="logo-wrapper"> <a href="index.html"> <img class="logo" src="./img/logo.png"> </a>
-        </div>
-        </p>
-        <a href="https://web.whatsapp.com">
-            <div class="contact comic-button">
-                Telefone para contato: (45)99199-1991
-            </div>
-        </a>
-    </footer>
 
 </body>
 
