@@ -179,7 +179,7 @@ function abaixarKg(tipoDoce) {
             var ContagemComb1 = inputcontagem4.value
             if (ContagemComb1 > 0) {
                 var novovalor4 = parseInt(ContagemComb1) - 1;
-            inputcontagem3.value = novovalor4;
+            inputcontagem4.value = novovalor4;
             }
             break;
 
@@ -187,8 +187,8 @@ function abaixarKg(tipoDoce) {
             var inputcontagem5 = document.querySelector("#ContCombo_2");
             var ContagemComb2 = inputcontagem5.value
             if (ContagemComb2 > 0) {
-                var novovalor5 = parseInt(ContagemDoisAmo) - 1;
-            inputcontagem3.value = novovalor5;
+                var novovalor5 = parseInt(ContagemComb2) - 1;
+            inputcontagem5.value = novovalor5;
             }
             break;
 
