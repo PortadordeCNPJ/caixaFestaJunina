@@ -98,31 +98,31 @@ function almentarKg(tipoDoce) {
             break;
 
         case "beijinho":
-            var inputcontagem1 = document.querySelector("#ContBeijinho");
-            var ContagemBeiji = inputcontagem1.value
+            var inputcontagem2 = document.querySelector("#ContBeijinho");
+            var ContagemBeiji = inputcontagem2.value
             var novovalor2 = parseInt(ContagemBeiji) + 1;
-            inputcontagem1.value = novovalor2;
+            inputcontagem2.value = novovalor2;
             break;
 
         case "twoAmores":
-            var inputcontagem1 = document.querySelector("#ContAmores");
-            var ContagemAmores = inputcontagem1.value
+            var inputcontagem3 = document.querySelector("#ContAmores");
+            var ContagemAmores = inputcontagem3.value
             var novovalor3 = parseInt(ContagemAmores) + 1;
-            inputcontagem1.value = novovalor3;
+            inputcontagem3.value = novovalor3;
             break;
 
         case "combo_1":
-            var inputcontagem1 = document.querySelector("#ContCombo_1");
-            var ContagemComb1 = inputcontagem1.value
+            var inputcontagem4 = document.querySelector("#ContCombo_1");
+            var ContagemComb1 = inputcontagem4.value
             var novovalor4 = parseInt(ContagemComb1) + 1;
-            inputcontagem1.value = novovalor4;
+            inputcontagem4.value = novovalor4;
             break;
 
         case "combo_2":
-            var inputcontagem1 = document.querySelector("#ContCombo_2");
-            var ContagemComb2 = inputcontagem1.value
+            var inputcontagem5 = document.querySelector("#ContCombo_2");
+            var ContagemComb2 = inputcontagem5.value
             var novovalor5 = parseInt(ContagemComb2) + 1;
-            inputcontagem1.value = novovalor5;
+            inputcontagem5.value = novovalor5;
             break;
 
         default:
