@@ -14,7 +14,7 @@ function calcValor(tipoDoce) {
     var precoCaju = document.querySelector("#precoCaju");
     var precoBeij = document.querySelector("#precoBeij");
     var precoCombo_1 = document.querySelector("#precoCombo_1");
-    var precoCombo_2 = document.querySelector("#precoCOmbo_2");
+    var precoCombo_2 = document.querySelector("#precoCombo_2");
 
 
     switch (tipoDoce) {
@@ -106,8 +106,8 @@ function almentarKg(tipoDoce) {
 
         case "twoAmores":
             var inputcontagem1 = document.querySelector("#ContAmores");
-            var ContagemAmores = inputcontagem1.value
-            var novovalor3 = parseInt(ContagemAmores) + 1;
+            var ContagemDoisAmo = inputcontagem1.value
+            var novovalor3 = parseInt(ContagemDoisAmo) + 1;
             inputcontagem1.value = novovalor3;
             break;
 
@@ -177,15 +177,15 @@ function abaixarKg(tipoDoce) {
             var ContagemComb1 = inputcontagem4.value
             if (ContagemComb1 > 0)
                 var novovalor4 = parseInt(ContagemComb1) - 1;
-            inputcontagem3.value = novovalor4;
+            inputcontagem4.value = novovalor4;
             break;
 
         case "combo_2":
             var inputcontagem5 = document.querySelector("#ContCombo_2");
             var ContagemComb2 = inputcontagem5.value
             if (ContagemComb2 > 0)
-                var novovalor5 = parseInt(ContagemDoisAmo) - 1;
-            inputcontagem3.value = novovalor5;
+                var novovalor5 = parseInt(ContagemComb2) - 1;
+            inputcontagem5.value = novovalor5;
             break;
 
         default:
