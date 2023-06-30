@@ -159,33 +159,37 @@ function abaixarKg(tipoDoce) {
         case "beijinho":
             var inputcontagem2 = document.querySelector("#ContBeijinho");
             var ContagemBeiji = inputcontagem2.value
-            if (ContagemBeiji > 0)
+            if (ContagemBeiji > 0) {
                 var novovalor2 = parseInt(ContagemBeiji) - 1;
             inputcontagem2.value = novovalor2;
+            }
             break;
 
         case "twoAmores":
             var inputcontagem3 = document.querySelector("#ContAmores");
             var ContagemDoisAmo = inputcontagem3.value
-            if (ContagemDoisAmo > 0)
+            if (ContagemDoisAmo > 0){
                 var novovalor3 = parseInt(ContagemDoisAmo) - 1;
             inputcontagem3.value = novovalor3;
+            }
             break;
 
         case "combo_1":
             var inputcontagem4 = document.querySelector("#ContCombo_1");
             var ContagemComb1 = inputcontagem4.value
-            if (ContagemComb1 > 0)
+            if (ContagemComb1 > 0) {
                 var novovalor4 = parseInt(ContagemComb1) - 1;
             inputcontagem3.value = novovalor4;
+            }
             break;
 
         case "combo_2":
             var inputcontagem5 = document.querySelector("#ContCombo_2");
             var ContagemComb2 = inputcontagem5.value
-            if (ContagemComb2 > 0)
+            if (ContagemComb2 > 0) {
                 var novovalor5 = parseInt(ContagemDoisAmo) - 1;
             inputcontagem3.value = novovalor5;
+            }
             break;
 
         default:
