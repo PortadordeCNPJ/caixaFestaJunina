@@ -1,6 +1,6 @@
 let form = document.getElementById("prod");
 
-const valorPacoca = 1.00
+const valorBrigadeiro = 1.00
 const valorBeijinho = 3.00
 const valorCajuzinho = 3.00
 const valorDoisAmores = 3.00
@@ -10,18 +10,19 @@ const combo_2 = 12.00
 function calcValor(tipoDoce) {
     console.log(tipoDoce);
 
-    var precoPacoca = document.querySelector("#precoPacoca");
+    var precoBrigadeiro = document.querySelector("#precoBrigadeiro");
     var precoCaju = document.querySelector("#precoCaju");
     var precoBeij = document.querySelector("#precoBeij");
+    var precoAmore = document.querySelector("#precoAmore");
     var precoCombo_1 = document.querySelector("#precoCombo_1");
-    var precoCombo_2 = document.querySelector("#precoCOmbo_2");
+    var precoCombo_2 = document.querySelector("#precoCombo_2");
 
 
     switch (tipoDoce) {
-        case "pacoca":
-            var inputcontagem = document.querySelector("#ContPacoca");
-            var preco = parseInt(inputcontagem.value) * valorPacoca;
-            precoPacoca.value = ("R$ " + preco.toFixed(2)).replace(".", ",");
+        case "brigadeiro":
+            var inputcontagem = document.querySelector("#ContBriga");
+            var preco = parseInt(inputcontagem.value) * valorBrigadeiro;
+            precoBrigadeiro.value = ("R$ " + preco.toFixed(2)).replace(".", ",");
             break;
 
         case "cajuzinho":
@@ -59,7 +60,7 @@ function calcValor(tipoDoce) {
     }
 
     var valorTotalinput = document.querySelector("#precototal");
-    var valorTotal = converterStringParaFloat(precoPacoca.value) + converterStringParaFloat(precoCaju.value) + converterStringParaFloat(precoBeij.value) + converterStringParaFloat(precoAmore.value) + converterStringParaFloat(precoCombo_1.value) + converterStringParaFloat(precoCombo_2.value);
+    var valorTotal = converterStringParaFloat(precoBrigadeiro.value) + converterStringParaFloat(precoCaju.value) + converterStringParaFloat(precoBeij.value) + converterStringParaFloat(precoAmore.value) + converterStringParaFloat(precoCombo_1.value) + converterStringParaFloat(precoCombo_2.value);
     valorTotalinput.value = ("R$ " + valorTotal.toFixed(2)).replace(".", ",");
 }
 
@@ -83,10 +84,10 @@ function converterStringParaFloat(valor) {
 function almentarKg(tipoDoce) {
     console.log(tipoDoce);
     switch (tipoDoce) {
-        case "pacoca":
-            var inputcontagem = document.querySelector("#ContPacoca");
-            var ContagemPaco = inputcontagem.value
-            var novovalor = parseInt(ContagemPaco) + 1;
+        case "brigadeiro":
+            var inputcontagem = document.querySelector("#ContBriga");
+            var ContagemBrigadei = inputcontagem.value
+            var novovalor = parseInt(ContagemBrigadei) + 1;
             inputcontagem.value = novovalor;
             break;
 
@@ -138,11 +139,11 @@ function abaixarKg(tipoDoce) {
 
     switch (tipoDoce) {
 
-        case "pacoca":
-            var inputcontagem = document.querySelector("#ContPacoca");
-            var ContagemPaco = inputcontagem.value
-            if (ContagemPaco > 0) {
-                var novovalor = parseInt(ContagemPaco) - 1;
+        case "brigadeiro":
+            var inputcontagem = document.querySelector("#ContBriga");
+            var ContagemBrigadei = inputcontagem.value
+            if (ContagemBrigadei > 0) {
+                var novovalor = parseInt(ContagemBrigadei) - 1;
                 inputcontagem.value = novovalor;
             }
             break;
@@ -197,6 +198,7 @@ function abaixarKg(tipoDoce) {
     }
 
     calcValor(tipoDoce)
+    debugger
 }
 
 form.addEventListener("submit", (e) => {
