@@ -1,10 +1,10 @@
-html {
+.inicio {
   margin: 0;
   padding: 0;
   height: 100%;
 }
 
-body {
+.produto {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -79,5 +79,17 @@ margin-left: -15%;
 /*imagem no topo*/
 .image-top{
   height: 250px;
-  width: 1709px;
+  width: 2000px;
+  position:relative ;
+  left:-400px;
+}
+
+.titulobarraca{
+  font-family: titulo;
+  font-size: 55px;
+}
+
+@font-face {
+  font-family: titulo;
+  src: url(Little\ Cookies.otf);
 }
