@@ -10,5 +10,6 @@
 
   </head>
   <body>
-    <h1>Método de pagamento: PIX</h1>
+    <center><h1>Método de pagamento: PIX</h1></center>
+    <center><img src="pixbarraca.jpeg"></center>
   </body>
