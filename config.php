@@ -4,7 +4,7 @@
     define('PASS', '');
     define('BASE', 'cadastro');
 
-    $conn = new MSQLI(HOST,USER,PASS,BASE);
+    $conn = new MYSQLI(HOST,USER,PASS,BASE);
 
     if($conexao->connect_errno){
         echo 'Erro';

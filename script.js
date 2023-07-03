@@ -16,6 +16,7 @@ function calcValor(tipoDoce) {
     var precoAmore = document.querySelector("#precoAmore");
     var precoCombo_1 = document.querySelector("#precoCombo_1");
     var precoCombo_2 = document.querySelector("#precoCombo_2");
+    var precoKitAmor = document.querySelector("#precoKitAmor");
 
 
     switch (tipoDoce) {
