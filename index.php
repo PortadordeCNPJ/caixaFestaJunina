@@ -38,10 +38,10 @@
 		<?php
 	switch(@$_REQUEST["page"]){
 		case "novo":
-			include("novo-usuario.php");
+			include("Compra.php");
 		break;
 		case "listar":
-			include("listar-usuario.php");
+			include("Venda.php");
 		break;
 		default;
 			print "<center><h1>Bem-vindos!</h1></center>";
