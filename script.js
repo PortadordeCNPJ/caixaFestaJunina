@@ -198,7 +198,7 @@ function abaixarKg(tipoDoce) {
     }
 
     calcValor(tipoDoce)
-    debugger
+   
 }
 
 form.addEventListener("submit", (e) => {
