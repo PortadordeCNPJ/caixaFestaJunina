@@ -1,11 +1,11 @@
 let form = document.getElementById("prod");
 
-const valorBrigadeiro = 1.00
-const valorBeijinho = 3.00
-const valorCajuzinho = 3.00
-const valorDoisAmores = 3.00
-const combo_1 = 12.00
-const combo_2 = 12.00
+const valorBrigadeiro = 2.00
+const valorBeijinho = 2.00
+const valorCajuzinho = 2.00
+const valorDoisAmores = 2.00
+const combo_1 = 5.00
+const combo_2 = 7.00
 
 function calcValor(tipoDoce) {
     console.log(tipoDoce);
@@ -198,7 +198,7 @@ function abaixarKg(tipoDoce) {
     }
 
     calcValor(tipoDoce)
-    debugger
+   
 }
 
 form.addEventListener("submit", (e) => {
