@@ -60,7 +60,7 @@
 
 <!--Produtos -->
   <body class="produto">
-  <h1>Sejam bem-vindos a barraca do 3° C Informática</h1>
+  <h1 class="titulobarraca">Sejam bem-vindos a barraca do 3° C Informática</h1>
   <BR><BR>
   <img src="./imgs/festaaaaaaaaaa.jpeg" class="image-top">
 

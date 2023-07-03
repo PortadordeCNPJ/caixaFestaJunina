@@ -83,3 +83,13 @@ margin-left: -15%;
   position:relative ;
   left:-400px;
 }
+
+.titulobarraca{
+  font-family: titulo;
+  font-size: 55px;
+}
+
+@font-face {
+  font-family: titulo;
+  src: url(Little\ Cookies.otf);
+}
