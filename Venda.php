@@ -10,5 +10,5 @@
 
   </head>
   <body>
-    <h1>Listar usuário</h1>
+    <h1>Método de pagamento: PIX</h1>
   </body>
