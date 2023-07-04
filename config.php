@@ -1,4 +1,4 @@
-<?php
+<?php/*
     
     $dbHost = 'Localhost';
     $dbUsername = 'root';
@@ -15,5 +15,5 @@
     {
         echo "Conexão efetuada com sucesso!";
     }
-
+*/
 ?>
