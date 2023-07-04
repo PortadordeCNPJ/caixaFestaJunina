@@ -160,7 +160,7 @@
 
     <center><input class="total-amount" id="precototal" readonly value="R$ 0,00" /></center>
 
-    <center><input type="button" class="registro" href="Registro.php" value="Registro"></center>
+    <center><a href="Registro.php"><input type="button" class="registro" href="#" value="Registro"></a></center>
 
     </div>
 <!-- Insteração do usuario com os produtos -->
