@@ -29,7 +29,7 @@ html{
 display: flex;
 flex-direction: column;
 align-items: center;
-background-color: rgb(168, 163, 163);
+background-color: #ac6730;
 width: 225px;
 height: 290px;
 border-radius: 10px;
@@ -272,7 +272,7 @@ header{
   text-align: center;
   text-decoration: none;
   color: #fff;
-  background-color: #ff5252;
+  background-color: #fff;
   border: 2px solid #000;
   border-radius: 10px;
   box-shadow: 5px 5px 0px #000;
@@ -282,14 +282,14 @@ header{
 }
 
 .nav-item > a {
-  color: white;
+  color: black;
 }
 
 .nav-item:hover {
-  background-color: #fff;
-  color: #ff5252;
-  border: 2px solid #ff5252;
-  box-shadow: 5px 5px 0px #ff5252;
+  background-color: #f3900e;
+  color: black;
+  border: 2px solid black;
+  box-shadow: 5px 5px 0px black;
 }
 
 .nav-item:active {
@@ -298,3 +298,6 @@ header{
   transform: translateY(4px);
 }
 
+.box{
+  margin-top: 30px;
+}
