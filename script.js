@@ -17,6 +17,7 @@ function calcValor(tipoDoce) {
     var precoAmore = document.querySelector("#precoAmore");
     var precoCombo_1 = document.querySelector("#precoCombo_1");
     var precoCombo_2 = document.querySelector("#precoCombo_2");
+    var precoamor = document.querySelector("#precoamor");
 
     switch (tipoDoce) {
         case "brigadeiro":
@@ -66,7 +67,7 @@ function calcValor(tipoDoce) {
     }
 
     var valorTotalinput = document.querySelector("#precototal");
-    var valorTotal = converterStringParaFloat(precoBrigadeiro.value) + converterStringParaFloat(precoCaju.value) + converterStringParaFloat(precoBeij.value) + converterStringParaFloat(precoAmore.value) + converterStringParaFloat(precoCombo_1.value) + converterStringParaFloat(precoCombo_2.value);
+    var valorTotal = converterStringParaFloat(precoBrigadeiro.value) + converterStringParaFloat(precoCaju.value) + converterStringParaFloat(precoBeij.value) + converterStringParaFloat(precoAmore.value) + converterStringParaFloat(precoCombo_1.value) + converterStringParaFloat(precoCombo_2.value) + converterStringParaFloat(precoKitA.value);
     valorTotalinput.value = ("R$ " + valorTotal.toFixed(2)).replace(".", ",");
 }
 
@@ -206,11 +207,11 @@ function abaixarKg(tipoDoce) {
             }
             break;
 
-        case "combo_2":
-            var inputcontagem6 = document.querySelector("#ContCombo_2");
-            var ContagemComb2 = inputcontagem6.value
-            if (ContagemComb2 > 0) {
-                var novovalor6 = parseInt(ContagemContagemKitA) - 1;
+        case "kitAmor":
+            var inputcontagem6 = document.querySelector("#ContKitAmor");
+            var ContagemKitA = inputcontagem6.value
+            if (ContagemKitA > 0) {
+                var novovalor6 = parseInt(ContagemKitA) - 1;
                 inputcontagem6.value = novovalor6;
             }
             break;
