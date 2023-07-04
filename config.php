@@ -1,7 +1,7 @@
 <?php
 
 $hostname = "localhost";
-$bancodedados = "db_feira";
+$bancodedados = "bd_feira";
 $usuario = "root";
 $senha = "";
 
