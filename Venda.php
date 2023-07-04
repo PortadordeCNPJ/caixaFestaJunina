@@ -9,8 +9,10 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   </head>
+
   <body>
     <center><h1>Método de pagamento: PIX</h1></center>
     <center><img src="pixbarraca.jpeg"></center>
   </body>
+  
 </html>
