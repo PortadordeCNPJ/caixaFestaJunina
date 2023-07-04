@@ -19,7 +19,7 @@
     <BR>
     <center><img src="pixbarraca.jpeg"></center>
     <BR><BR>
-    <button class="comic-button">Voltar</button>
+    <a href="index.php"><button class="comic-button">Voltar</button></a>
 
   </div>
   </body>
