@@ -1,7 +1,3 @@
-<h1 class="titulobarraca">Sejam bem-vindos a barraca do 3° C Informática</h1>
-<BR><BR>
-<img src="./imgs/festaaaaaaaaaa.jpeg" class="image-top">
-
 <form id="prod" method="POST" action="Registro.php">
     <div class="container-card">
         <div class="card">
@@ -94,7 +90,7 @@
 
 <div class="botoes">
 
-    <center><a href="Venda.php"><input type="button" class="butao-pix" href="?page="></a></center>
+    <center><a href="Venda.php"><input type="button" class="butao-pix" href="?page=vendas"></a></center>
 
     <center><input class="total-amount" id="precototal" readonly value="R$ 0,00" /></center>
 

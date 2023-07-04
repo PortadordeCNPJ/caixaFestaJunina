@@ -11,29 +11,27 @@
 </head>
 
 
-<body class="produto">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Fluxo de caixa</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="" href="?page=home">Compra</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="?page=listar">Venda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="?page=novo">Registro</a>
-                    </li>
+<body background="./imgs/fundo.avif" class="produto">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="" href="?page=home">Compra</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="?page=novo">Registro</a>
+                        </li>
+                </div>
+                <h1 class="titulobarraca">Sejam bem-vindos a barraca do 3° C Informática</h1>
             </div>
-        </div>
-    </nav>
-
+        </nav>
+    </header>
     <div class="container">
         <div class="row">
             <div class="col mt-5">
@@ -58,7 +56,7 @@
                     case "novo":
                         include("Registro.php");
                         break;
-                    case "listar":
+                    case "vendas":
                         include("Venda.php");
                         break;
 
