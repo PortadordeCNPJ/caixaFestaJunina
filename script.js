@@ -6,6 +6,7 @@ const valorCajuzinho = 2.00
 const valorDoisAmores = 2.00
 const combo_1 = 5.00
 const combo_2 = 7.00
+const precoamor = 10.00
 
 function calcValor(tipoDoce) {
     console.log(tipoDoce);
@@ -16,8 +17,6 @@ function calcValor(tipoDoce) {
     var precoAmore = document.querySelector("#precoAmore");
     var precoCombo_1 = document.querySelector("#precoCombo_1");
     var precoCombo_2 = document.querySelector("#precoCombo_2");
-    var precoKitAmor = document.querySelector("#precoKitAmor");
-
 
     switch (tipoDoce) {
         case "brigadeiro":
@@ -54,6 +53,12 @@ function calcValor(tipoDoce) {
             var inputcontagem = document.querySelector("#ContCombo_2");
             var preco = parseInt(inputcontagem.value) * combo_2;
             precoCombo_2.value = ("R$ " + preco.toFixed(2)).replace(".", ",");
+            break;
+
+        case "kitAmor":
+            var inputcontagem = document.querySelector("#ContKitAmor");
+            var preco = parseInt(inputcontagem.value) * precoamor;
+            precoKitA.value = ("R$ " + preco.toFixed(2)).replace(".", ",");
             break;
 
         default:
@@ -127,6 +132,13 @@ function almentarKg(tipoDoce) {
             inputcontagem5.value = novovalor5;
             break;
 
+        case "kitAmor":
+            var inputcontagem6 = document.querySelector("#ContKitAmor");
+            var ContagemKitA = inputcontagem6.value
+            var novovalor6 = parseInt(ContagemKitA) + 1;
+            inputcontagem6.value = novovalor6;
+            break;
+
         default:
             break;
 
@@ -163,16 +175,16 @@ function abaixarKg(tipoDoce) {
             var ContagemBeiji = inputcontagem2.value
             if (ContagemBeiji > 0) {
                 var novovalor2 = parseInt(ContagemBeiji) - 1;
-            inputcontagem2.value = novovalor2;
+                inputcontagem2.value = novovalor2;
             }
             break;
 
         case "twoAmores":
             var inputcontagem3 = document.querySelector("#ContAmores");
             var ContagemDoisAmo = inputcontagem3.value
-            if (ContagemDoisAmo > 0){
+            if (ContagemDoisAmo > 0) {
                 var novovalor3 = parseInt(ContagemDoisAmo) - 1;
-            inputcontagem3.value = novovalor3;
+                inputcontagem3.value = novovalor3;
             }
             break;
 
@@ -181,7 +193,7 @@ function abaixarKg(tipoDoce) {
             var ContagemComb1 = inputcontagem4.value
             if (ContagemComb1 > 0) {
                 var novovalor4 = parseInt(ContagemComb1) - 1;
-            inputcontagem4.value = novovalor4;
+                inputcontagem4.value = novovalor4;
             }
             break;
 
@@ -190,7 +202,16 @@ function abaixarKg(tipoDoce) {
             var ContagemComb2 = inputcontagem5.value
             if (ContagemComb2 > 0) {
                 var novovalor5 = parseInt(ContagemComb2) - 1;
-            inputcontagem5.value = novovalor5;
+                inputcontagem5.value = novovalor5;
+            }
+            break;
+
+        case "combo_2":
+            var inputcontagem6 = document.querySelector("#ContCombo_2");
+            var ContagemComb2 = inputcontagem6.value
+            if (ContagemComb2 > 0) {
+                var novovalor6 = parseInt(ContagemContagemKitA) - 1;
+                inputcontagem6.value = novovalor6;
             }
             break;
 
@@ -199,7 +220,7 @@ function abaixarKg(tipoDoce) {
     }
 
     calcValor(tipoDoce)
-   
+
 }
 
 form.addEventListener("submit", (e) => {

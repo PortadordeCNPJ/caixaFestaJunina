@@ -137,6 +137,18 @@
                     <input class="amount" id="precoCombo_2" readonly value="R$0,00" />
                 </div>
             </div>
+
+            <div class="card">
+                <img class="img-card" src="./imgs/kit2.jpeg">
+                <div class="texto-card">
+                    <div class="btn" onclick="almentarKg('kitAmor')">+</div>
+                    <input class="count" id="ContKitAmo" readonly value="0" />
+                    <div class="btn" onclick="abaixarKg('kitAmor')">-</div>
+                </div>
+                <div class="prices">
+                    <input class="amount" id="precoKitAmor" readonly value="R$0,00" />
+                </div>
+            </div>
         </div>
     </form>
 
