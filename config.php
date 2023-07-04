@@ -1,16 +1,19 @@
 <?php
-    define('HOST', 'localhost');
-    define('USER', 'root');
-    define('PASS', '');
-    define('BASE', 'cadastro');
+    
+    $dbHost = 'Localhost';
+    $dbUsername = 'root';
+    $dbPassword = '';
+    $dbName = 'bdbarraca';
 
-    $conn = new MYSQLI(HOST,USER,PASS,BASE);
+    $conexao = new mysqli($dbHost,$dbUsername,$dbPassword,$dbName);
 
-    if($conexao->connect_errno){
-        echo 'Erro';
+    if($conexao->connect_errno)
+    {
+        echo'Erro';
     }
-    else{
-        echo 'Its work';
+    else
+    {
+        echo "Conexão efetuada com sucesso!";
     }
 
 ?>
