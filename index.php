@@ -139,7 +139,7 @@
             </div>
 
             <div class="card">
-                <img class="img-card" src="./imgs/kit2.jpeg">
+                <img class="img-card" src="./imgs/kitamor.jpeg">
                 <div class="texto-card">
                     <div class="btn" onclick="almentarKg('kitAmor')">+</div>
                     <input class="count" id="ContKitAmo" readonly value="0" />
