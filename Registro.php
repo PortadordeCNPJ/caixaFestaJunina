@@ -27,7 +27,7 @@
 
     <div class="form-group">
       <label class="form-label" for="name">Quantidade:</label>
-      <input required="" placeholder="Insira seu CPF" class="form-input" id="CPF" type="text">
+      <input required="" placeholder="Insira a quantidade" class="form-input" id="CPF" type="text">
     </div>
 
   </form>
