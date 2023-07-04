@@ -7,10 +7,7 @@
 			include("Venda.php");
 		break;
 		default;
-
-  if(isset())
-
-	}
+        }   
 	?>
   <!-- Opções de escolhande página(Compra,Venda,Registro) -->
 
