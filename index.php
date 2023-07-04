@@ -64,7 +64,7 @@
   <BR><BR>
   <img src="./imgs/festaaaaaaaaaa.jpeg" class="image-top">
 
-  <form id="prod">
+  <form id="prod" method="post" action="">
         <div class="container-card">
             <div class="card">
                 <img class="img-card" src="./imgs/cajuzinho.jpg">
