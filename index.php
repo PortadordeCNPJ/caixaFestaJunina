@@ -1,7 +1,7 @@
 <?php
 	switch(@$_REQUEST["page"]){
 		case "novo":
-			include("Compra.php");
+			include("Registro.php");
 		break;
 		case "listar":
 			include("Venda.php");
@@ -160,7 +160,7 @@
 
     <center><input class="total-amount" id="precototal" readonly value="R$ 0,00" /></center>
 
-    <center><input type="button" class="historico" href="#" value="Histórico"></center>
+    <center><input type="button" class="historico" href="Compra.php" value="Histórico"></center>
 
     </div>
 <!-- Insteração do usuario com os produtos -->
