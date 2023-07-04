@@ -94,11 +94,11 @@
 
 <div class="botoes">
 
-    <center><a href="Venda.php"><input type="button" class="butao-pix" href="Venda.php"></a></center>
+    <center><a href="Venda.php"><input type="button" class="butao-pix" href="?page="></a></center>
 
     <center><input class="total-amount" id="precototal" readonly value="R$ 0,00" /></center>
 
-    <center><a href="Registro.php"><input type="button" class="registro" href="#" value="Registro" name="registro"></a>
+    <center><a href="?page=novo"><input type="button" class="registro" href="#" value="Registro" name="registro"></a>
     </center>
 
 </div>
