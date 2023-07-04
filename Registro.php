@@ -21,7 +21,7 @@
     </div>
 
     <div class="form-group">
-      <label class="form-label" for="email">Email:</label>
+      <label class="form-label" for="email">Preço:</label>
       <input required="" placeholder="Insira o preço" class="form-input" name="email" id="email" type="email">
     </div>
 
