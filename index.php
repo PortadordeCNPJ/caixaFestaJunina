@@ -156,7 +156,7 @@
 
     <div class="botoes">
 
-    <center><input type="button" class="butao-pix" href="Venda.php"></center>
+    <center><a href="Venda.php"><input type="button" class="butao-pix" href="Venda.php"></a></center>
 
     <center><input class="total-amount" id="precototal" readonly value="R$ 0,00" /></center>
 
