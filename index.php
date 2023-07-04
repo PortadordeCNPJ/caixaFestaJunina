@@ -160,7 +160,7 @@
 
     <center><input class="total-amount" id="precototal" readonly value="R$ 0,00" /></center>
 
-    <center><input type="button" class="historico" href="Compra.php" value="Histórico"></center>
+    <center><input type="button" class="registro" href="Registro.php" value="Registro"></center>
 
     </div>
 <!-- Insteração do usuario com os produtos -->
