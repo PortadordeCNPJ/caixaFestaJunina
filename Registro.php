@@ -12,27 +12,39 @@
   </head>
 
 <body>
-<div class="box">
-    <form id="form" class="colorful-form" method="post" action="Registro.php">
+  <?php 
+        
+      include_once('config.php');
 
-<div class="form-group">
-  <label class="form-label"  name="produto">Produto:</label>
-  <input required="" placeholder="Insira o produto" class="form-input" id="name" type="text">
-</div>
+      if(isset($_POST['registro']))
+      {
+        print_r($_POST['produto']);
+        print_r($_POST['preco']);
+        print_r($_POST['quantidade']);
+        var_dump($_POST);
+      }?>
 
-<div class="form-group">
-  <label class="form-label" name="preco">Preço:</label>
-  <input required="" placeholder="Insira o preço" class="form-input" name="email" id="email">
-</div>
+  <div class="box">
+    <form id="form" class="colorful-form" method="post" action="?page=novo">
 
-<div class="form-group">
-  <label class="form-label" name="quantidade">Quantidade:</label>
-  <input required="" placeholder="Insira a quantidade" class="form-input" id="CPF" type="text">
-  <input type="submit" name="registro" id="registo">
-</div>
+      <div class="form-group">
+        <label class="form-label">Produto:</label>
+        <input required="" placeholder="Insira o produto" class="form-input" id="produto" name="produto" type="text">
+      </div>
 
-</form>
-    </div>
+      <div class="form-group">
+        <label class="form-label" >Preço:</label>
+        <input required="" placeholder="Insira o preço" class="form-input" name="preco" id="preco">
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" >Quantidade:</label>
+        <input required="" placeholder="Insira a quantidade" class="form-input" id="quantidade" name="quantidade" type="text">
+        <input type="submit" name="registro" id="registo">
+      </div>
+
+    </form>
+  </div>
 </body>
 
 </html>

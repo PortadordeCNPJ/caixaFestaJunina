@@ -1,20 +1,16 @@
 body{
   background-color: #f3900e;
-  padding: 0%;
-  width: 100%;
-}
-
-html{
-  padding: 0%;
-  width: 100%;
-}
-
-.inicio {
-
   margin: 0;
   padding: 0;
   height: 100%;
 }
+
+html{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 
 .produto {
   margin: 0;
