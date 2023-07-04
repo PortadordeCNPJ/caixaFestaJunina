@@ -171,6 +171,8 @@ margin-left: -15%;
   transform: translateY(4px);
 }
 
+/* ------------------------------ Css do login ----------------------------*/
+
 .container{
   display: flex;
   flex-direction: column;
