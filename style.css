@@ -94,10 +94,11 @@ margin-left: -15%;
   margin-top: -20px;
 
 }
-
+/*titulo da parte de cima*/
 .titulobarraca{
   font-family: titulo;
   font-size: 55px;
+ 
 }
 
 @font-face {
