@@ -8,6 +8,14 @@
 		break;
 		default;
         }   
+      include_once('config.php');
+
+      if(isset($_POST['submit']));
+      {
+        print_r($_POST['produto']);
+        print_r($_POST['preco']);
+        print_r($_POST['quantidade']);
+      }
 	?>
   <!-- Opções de escolhande página(Compra,Venda,Registro) -->
 
@@ -64,7 +72,7 @@
   <BR><BR>
   <img src="./imgs/festaaaaaaaaaa.jpeg" class="image-top">
 
-  <form id="prod" method="post" action="">
+  <form id="prod" method="POST" action="Registro.php">
         <div class="container-card">
             <div class="card">
                 <img class="img-card" src="./imgs/cajuzinho.jpg">
@@ -162,6 +170,27 @@
 
     <center><a href="Registro.php"><input type="button" class="registro" href="#" value="Registro" name="registro"></a></center>
 
+    </div>
+    <div class="box">
+    <form id="form" class="colorful-form" method="post" action="Registro.php">
+
+<div class="form-group">
+  <label class="form-label"  name="produto">Produto:</label>
+  <input required="" placeholder="Insira o produto" class="form-input" id="name" type="text">
+</div>
+
+<div class="form-group">
+  <label class="form-label" name="preco">Preço:</label>
+  <input required="" placeholder="Insira o preço" class="form-input" name="email" id="email">
+</div>
+
+<div class="form-group">
+  <label class="form-label" name="quantidade">Quantidade:</label>
+  <input required="" placeholder="Insira a quantidade" class="form-input" id="CPF" type="text">
+  <input type="submit" name="registro" id="registo">
+</div>
+
+</form>
     </div>
 <!-- Insteração do usuario com os produtos -->
 <script src="script.js"></script>
