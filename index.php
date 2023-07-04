@@ -7,7 +7,8 @@
 			include("Venda.php");
 		break;
 		default;
-        }   
+        }  
+        /* 
       include_once('config.php');
 
       if(isset($_POST['submit']));
@@ -15,7 +16,7 @@
         print_r($_POST['produto']);
         print_r($_POST['preco']);
         print_r($_POST['quantidade']);
-      }
+      }*/
 	?>
   <!-- Opções de escolhande página(Compra,Venda,Registro) -->
 
