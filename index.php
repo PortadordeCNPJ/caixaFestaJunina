@@ -7,6 +7,9 @@
 			include("Venda.php");
 		break;
 		default;
+
+  if(isset())
+
 	}
 	?>
   <!-- Opções de escolhande página(Compra,Venda,Registro) -->
@@ -160,7 +163,7 @@
 
     <center><input class="total-amount" id="precototal" readonly value="R$ 0,00" /></center>
 
-    <center><a href="Registro.php"><input type="button" class="registro" href="#" value="Registro"></a></center>
+    <center><a href="Registro.php"><input type="button" class="registro" href="#" value="Registro" name="registro"></a></center>
 
     </div>
 <!-- Insteração do usuario com os produtos -->
