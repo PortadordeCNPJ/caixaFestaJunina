@@ -16,19 +16,19 @@
 
   include_once('config.php');
 
-  if (isset($_POST['registro'])) {
+  if (isset($_POST['submit'])) {
     print_r($_POST['produto']);
     print_r($_POST['preco']);
     print_r($_POST['quantidade']);
     var_dump($_POST);
 
 
-    $produtos = $_POST['produto'];
-    $preco = $_POST['preco'];
-    $quantidade = $_POST['quantidade'];
+    $nome_produto = $_POST['produto'];
+    $preco_produto = $_POST['preco'];
+    $qtd_produto = $_POST['quantidade'];
 
-    $sql = "INSERT INTO tb_produtos(nome_produtos, preco_produtos)
-        VALUES ('$produtos', '$preco')";
+    $sql = "INSERT INTO tb_produto (nome_produto, preco_produto, qtd_produto)
+    VALUES ('$nome_produto', '$preco_produto', $qtd_produto)";
 
     if (mysqli_query($mysqli, $sql)) {
       echo "Produto registrado com sucesso.";
