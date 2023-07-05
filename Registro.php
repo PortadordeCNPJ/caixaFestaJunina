@@ -16,7 +16,7 @@
 
   include_once('config.php');
 
-  if (isset($_POST['submit'])) {
+  if (isset($_POST['registro'])) {
     print_r($_POST['produto']);
     print_r($_POST['preco']);
     print_r($_POST['quantidade']);
@@ -56,7 +56,7 @@
       <div class="form-group">
         <label class="form-label">Quantidade:</label>
         <input required="" placeholder="Insira a quantidade" class="form-input" id="quantidade" name="quantidade" type="text">
-        <input type="submit" name="registro" id="registo">
+        <input type="submit" name="registro" id="registro">
       </div>
 
     </form>
