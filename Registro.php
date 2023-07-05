@@ -55,8 +55,7 @@
 
       <div class="form-group">
         <label class="form-label">Quantidade:</label>
-        <input required="" placeholder="Insira a quantidade" class="form-input" id="quantidade" name="quantidade"
-          type="text">
+        <input required="" placeholder="Insira a quantidade" class="form-input" id="quantidade" name="quantidade" type="text">
         <input type="submit" name="registro" id="registo">
       </div>
 
