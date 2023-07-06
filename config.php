@@ -1,7 +1,7 @@
 <?php
 
 $hostname = "localhost";
-$bancodedados = "bdbarraca";
+$bancodedados = "bd_barraca";
 $usuario = "root";
 $senha = "123";
 
