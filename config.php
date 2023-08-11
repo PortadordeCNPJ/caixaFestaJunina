@@ -1,12 +1,12 @@
 <?php
 
 $hostname = "localhost";
-$bancodedados = "db_feira";
+$bancodedados = "dbfeira";
 $usuario = "root";
 $senha = "";
 
-$mysqli = new mysqli($hostname, $usuario, $senha, $bancodedados);
-if ($mysqli->connect_errno) {
-    echo "Falha ao conectar: (" . $mysqli->connect_errno . ")" . $mysqli->connect_error;
+$bd_feira = new mysqli($hostname, $usuario,  $bancodedados);
+if ($bd_feira->connect_errno) {
+    echo "Falha ao conectar: (" . $bd_feira->connect_errno . ")" . $bd_feira->connect_error;
 }
 ?>

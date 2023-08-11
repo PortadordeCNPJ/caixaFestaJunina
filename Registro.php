@@ -25,18 +25,25 @@
 
     $produtos = $_POST['produto'];
     $preco = $_POST['preco'];
-    $quantidade = $_POST['quantidade'];
+    //$quantidade = $_POST['quantidade'];
 
     $sql = "INSERT INTO tb_produtos(nome_produtos, preco_produtos)
         VALUES ('$produtos', '$preco')";
 
-    if (mysqli_query($mysqli, $sql)) {
+    if (mysqli_query($bd_feira, $sql)) {
       echo "Produto registrado com sucesso.";
     } else {
-      echo "ERRO" . mysqli_connect_error($mysqli);
+      echo "ERRO" . mysqli_connect_error($bd_feira);
     }
 
-    mysqli_close($mysqli);
+    if ($result = $mysqli -> query("SELECT * FROM Persons")) {
+      echo "Returned rows are: " . $result -> num_rows;
+      // Free result set
+      $result -> free_result();
+    }
+    
+
+    mysqli_close($bd_feira);
 
   } ?>
 
