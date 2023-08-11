@@ -3,7 +3,7 @@
 $hostname = "localhost";
 $bancodedados = "dbfeira";
 $usuario = "root";
-$senha = "";
+$senha = "123";
 
 $bd_feira = new mysqli($hostname, $usuario,  $bancodedados);
 if ($bd_feira->connect_errno) {

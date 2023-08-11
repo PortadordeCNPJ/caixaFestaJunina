@@ -27,8 +27,8 @@
     $preco = $_POST['preco'];
     //$quantidade = $_POST['quantidade'];
 
-    $sql = "INSERT INTO tb_produtos(nome_produtos, preco_produtos)
-        VALUES ('$produtos', '$preco')";
+    $sql = "INSERT INTO tb_produto (nome_produto, preco_produto, qtd_produto)
+    VALUES ('$nome_produto', '$preco_produto', '$qtd_produto')";
 
     if (mysqli_query($bd_feira, $sql)) {
       echo "Produto registrado com sucesso.";
@@ -62,9 +62,8 @@
 
       <div class="form-group">
         <label class="form-label">Quantidade:</label>
-        <input required="" placeholder="Insira a quantidade" class="form-input" id="quantidade" name="quantidade"
-          type="text">
-        <input type="submit" name="registro" id="registo">
+        <input required="" placeholder="Insira a quantidade" class="form-input" id="quantidade" name="quantidade" type="text">
+        <input type="submit" name="registro" id="registro">
       </div>
 
     </form>
