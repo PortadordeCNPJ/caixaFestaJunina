@@ -1,0 +1,16 @@
+{
+    "name": "guilherme.muller2/carrinho-de-compras",
+    "autoload": {
+        "psr-4": {
+            "GuilhermeMuller2\\CarrinhoDeCompras\\": "src/",
+            "app\\":"app"
+        }
+    },
+    "authors": [
+        {
+            "name": "PortadordeCNPJ",
+            "email": "guilhermedesouzamuller@gmail.com"
+        }
+    ],
+    "require": {}
+}
